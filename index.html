@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assents/css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <div class="main-op">
+            <div class="main-left">
+            <button id="um" type="submit"  onkeypress="tecla(1)" onclick="elementor('um')" class="numero">1</button>
+            <button id="dois" type="submit" onclick="elementor('dois')" class="numero">2</button>
+            <button id="tres" type="submit"  onclick="elementor('tres')" class="numero">3</button>
+            <button id="quatro" type="submit"  onclick="elementor('quatro')"class="numero">4</button>
+            <button id="cinco" type="submit" onclick="elementor('cinco')" class="numero">5</button>
+            <button id="seis" type="submit"  onclick="elementor('seis')"class="numero">6</button>
+            <button id="sete" type="submit"  onclick="elementor('sete')" class="numero">7</button>
+            <button id="oito" type="submit"  onclick="elementor('oito')"class="numero">8</button>
+            <button id="nove" type="submit"  onclick="elementor('nove')"class="numero">9</button>
+            <button  class="comando"></button>
+            <button id="zero" type="submit" onclick="elementor('zero')" class="numero">0</button>
+            <button  class="comando"></button>
+            </div>
+            <div class="main-rigth">
+                <button onclick="limpar()" class="op">C</button>
+            <button id="dividir" onclick="elementor('dividir')" class="op">/</button>
+            <button id="multiplicar" onclick="elementor('multiplicar')" class="op">*</button>
+            <button id="subtrair"onclick="elementor('subtrair')" class="op">-</button>
+            <button id="somar" onclick="elementor('somar')" class="op">+</button>
+            <button id="resposta" onclick="resposta()" class="op">=</button>
+
+            </div>
+            <h1>Resultado <p id="res"></p></h1>
+            
+        </div>
+    </main>
+        
+    
+    
+
+
+    <script src="assents/js/script.js"></script>
+</body>
+</html>
